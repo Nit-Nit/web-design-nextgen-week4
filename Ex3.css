@@ -1,0 +1,50 @@
+.header, .footer {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main-content, .sidebar {
+    background-color:pink;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .header, .footer {
+        padding: 10px;
+    }
+    .main-container {
+        flex-direction: row;
+    }
+    .main-content, .sidebar {
+        flex: 1;
+    }
+}
+@media (min-width: 900px) {
+    .header, .footer {
+        padding: 15px;
+    }
+    .main-container {
+        flex-direction: row;
+    }
+    .main-content {
+        flex: 1;
+    }
+    .sidebar {
+        flex: 0.3;
+    }
+}
+
+
